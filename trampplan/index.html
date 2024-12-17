@@ -1,0 +1,27 @@
+<html leng="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TrampPlan</title>
+        <style>
+            img {
+                width: 50px;
+                transition: transform 0.3s; /* Smooth scaling effect */
+            }
+            img:hover {
+                cursor: pointer; /* Changes cursor on hover */
+            }
+        </style>
+        <script>var exports = {};</script>
+        <script src="trampplan.js" defer></script>
+    </head>
+    <body>
+        <input type="text" id="hutLocation" placeholder="Where are you planning to stay?" />
+        <button id="searchButton">Search</button>
+        <ul id="resultsContainer"></ul>
+        
+        <img id="addTrampers" src="resources/upArrow.png" alt="Add trampers!">
+        <img id="removeTrampers" src="resources/downArrow.png" alt="Remove trampers!">
+        <p>Counter: <span id="counterDisplay">1</span></p>
+    </body>
+</html>
